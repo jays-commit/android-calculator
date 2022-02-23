@@ -5,8 +5,8 @@
     orientation: 'vertical'
     TextInput:
         id: calc_field
-        height: 200
-        size_hint: (1, None)
+        height: 100
+#        size_hint: (1, None)
         readonly: True
         disabled: True
         font_size: 64
@@ -17,7 +17,7 @@
         padding: 10
         spacing: 10
         height: 400
-        size_hint: (1, None)
+#        size_hint: (1, None)
 
 
         Button:
@@ -34,5 +34,86 @@
             font_size: 26
             on_press: root.calc_symbol('3')
 
+        Button:
+            text:"+"
+            font_size: 26
+            on_press: root.calc_symbol('+')
 
+        Button:
+            text:"4"
+            font_size: 26
+            on_press: root.calc_symbol('4')
 
+        Button:
+            text:"5"
+            font_size: 26
+            on_press: root.calc_symbol('5')
+        Button:
+            text:"6"
+            font_size: 26
+            on_press: root.calc_symbol('6')
+
+        Button:
+            text:"-"
+            font_size: 26
+            on_press: root.calc_symbol('-')
+
+        Button:
+            text:"7"
+            font_size: 26
+            on_press: root.calc_symbol('7')
+
+        Button:
+            text:"8"
+            font_size: 26
+            on_press: root.calc_symbol('8')
+        Button:
+            text:"9"
+            font_size: 26
+            on_press: root.calc_symbol('9')
+
+        Button:
+            text:"*"
+            font_size: 26
+            on_press: root.calc_symbol('*')
+
+        Button:
+            text:"("
+            font_size: 26
+            on_press: root.calc_symbol('(')
+
+        Button:
+            text:"0"
+            font_size: 26
+            on_press: root.calc_symbol('0')
+        Button:
+            text:")"
+            font_size: 26
+            on_press: root.calc_symbol(')')
+
+        Button:
+            text:"/"
+            font_size: 26
+            on_press: root.calc_symbol('/')
+
+    BoxLayout:
+        orientation: 'horizontal'
+        padding: 7
+        spacing: 7
+        height: 130
+        size_hint: (1, None)
+
+        Button:
+            text:"."
+            font_size: 26
+            on_press: root.calc_symbol('.')
+
+        Button:
+            text:"C"
+            font_size: 26
+            on_press: root.calc_symbol('C')
+
+        Button:
+            text:"="
+            font_size: 26
+            on_press: root.calc_symbol('=')
